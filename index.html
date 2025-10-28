@@ -95,6 +95,8 @@
         .section:nth-child(2) { animation-delay: 0.1s; }
         .section:nth-child(3) { animation-delay: 0.2s; }
         .section:nth-child(4) { animation-delay: 0.3s; }
+        .section:nth-child(5) { animation-delay: 0.4s; }
+        .section:nth-child(6) { animation-delay: 0.5s; }
 
         @keyframes slideUp {
             from {
@@ -191,6 +193,76 @@
             font-weight: 500;
         }
 
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .skill-category p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .recognition-item {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .recognition-item:hover {
+            transform: translateX(5px);
+        }
+
+        .recognition-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .recognition-item p {
+            color: #333;
+            line-height: 1.7;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
@@ -207,6 +279,10 @@
 
             .job-header {
                 flex-direction: column;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -239,7 +315,7 @@
                     <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"></path>
                     </svg>
-                    <a href="https://lknraut.github.io/cv" target="_blank">lknraut.github.io/cv</a>
+                    <a href="https://lknraut.github.io/cv/" target="_blank">lknraut.github.io/cv</a>
                 </div>
             </div>
         </header>
@@ -247,7 +323,7 @@
         <div class="section">
             <h2>Summary</h2>
             <p class="summary">
-                Cross-functional Product Leader and Engineer with experience leading full product lifecycles, from concept to launch, across media, IoT, and e-commerce. Founded and scaled local delivery and incubation platforms, built workflow automation tools, and developed education programs serving real communities. Skilled in product thinking, cross-functional leadership, and user-centric design, with hands-on expertise in aligning business strategy with engineering execution, building scalable systems, and driving user growth. Ready to bring entrepreneurial focus to the Associate Product Manager role.
+                Cross-functional Product Leader and Engineer with experience guiding full product lifecycles, from AI/ML prototyping to launch, across media, IoT, and e-commerce. Proven ability to bridge technical and business worlds by defining metrics, leading cross-functional teams, and driving market analysis. Demonstrated expertise in building scalable internal tools, managing systems automation, and launching user-centric programs that increased youth engagement by 40%. Seeking to apply entrepreneurial rigor to the Associate Product Manager role.
             </p>
         </div>
 
@@ -260,28 +336,32 @@
                         <div class="job-title">Product & Innovation Lead (Functional) / Transmission Operator</div>
                         <div class="company">Radio MGIRI 90.4 FM, Wardha</div>
                     </div>
-                    <div class="date">Aug 2022 – Present</div>
+                    <div class="date">April 2022 – Present</div>
                 </div>
                 <ul class="achievements">
-                    <li>Led the product lifecycle of the complete RJ Course from curriculum design and marketing to delivery, graduating 2 batches and increasing <span class="highlight">youth engagement by 60%</span> over six months</li>
-                    <li>Conceived and executed the Digital Incubation Program; defined operational KPIs, established the scaling roadmap, and secured government approval to provide media infrastructure access to local creators</li>
+                    <li>Pioneered the application of AI/ML by building the MVP of an entrepreneurial advisory chatbot using the ChatGPT API and integrating it with WhatsApp to provide community advice in the local language</li>
+                    <li>Owned the end-to-end project management for a major collaboration (SBC3 / UNICEF), including technical documentation, conducting extensive community outreach, and managing permissions with external stakeholders (Gram Panchayats, Schools, Public Officials)</li>
+                    <li>Led the product lifecycle of the complete RJ Course from curriculum design and marketing to delivery, graduating 2 batches and increasing <span class="highlight">youth engagement by 90%</span> over six months</li>
                     <li>Designed and deployed internal operational tools (Cue Sheet Manager, Quotation Dashboard, and IoT Automation System), leveraging technical transmission knowledge to <span class="highlight">reduce studio coordination time by ~60%</span> and improve broadcast reliability</li>
-                    <li>Delivered technical presentations on project ROI and engineering requirements to public officials and senior stakeholders to align product strategy with regulatory compliance</li>
-                    <li>Drove cross-functional requirements gathering by partnering with engineers, educators, and public officials to ensure user experience was compliant and effective</li>
+                    <li>Delivered technical presentations on project ROI, internal revenue generation opportunities and engineering requirements to public officials and senior stakeholders to align product strategy with regulatory compliance</li>
+                    <li>Taught Data Science and AI through a 20-episode educational radio series on Radio MGIRI 90.4 FM, making technical concepts accessible to the community</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="job-header">
                     <div>
-                        <div class="job-title">Quality Check Officer</div>
-                        <div class="company">Noccarc Robotics, Pune</div>
+                        <div class="job-title">Product Management Intern</div>
+                        <div class="company">The Lunch House, Pune</div>
                     </div>
-                    <div class="date">Jan 2022 – Jul 2022</div>
+                    <div class="date">Sept 2020 – March 2021</div>
                 </div>
                 <ul class="achievements">
-                    <li>Developed a continuity testing device for ventilator production; integrated directly into the QA process, <span class="highlight">cutting inspection time by 90%</span> and eliminating safety lapses</li>
-                    <li>Collaborated with production and QA teams to deploy the tool across lines; received Certificate of Appreciation from CEO for manufacturing impact</li>
+                    <li>Collaborated directly with the CEO to establish the comprehensive franchise business model, calculated the detailed pricing strategy, and drafted legal documentation/contracts for the franchise network</li>
+                    <li>Directed the end-to-end development of a franchise-ready Point-of-Sale (POS) system, collaboratively defining technical requirements with the development team and supporting the project from conception to PRD testing</li>
+                    <li>Presented the complete business model (including financial projections and PRD validation results) to potential investors alongside the CEO, demonstrating high-stakes communication and business acumen</li>
+                    <li>Oversaw the end-to-end website development, leading the UI/UX design and implementation to enhance customer experience and engagement</li>
+                    <li>Executed the Go-to-Market (GTM) strategy by launching organic social media campaigns that generated <span class="highlight">600+ qualified leads</span> and trained the tele-calling team, resulting in a <span class="highlight">35% conversion rate increase</span></li>
                 </ul>
             </div>
 
@@ -294,23 +374,48 @@
                     <div class="date">Jun 2019 – Feb 2020</div>
                 </div>
                 <ul class="achievements">
-                    <li>Founded a WhatsApp-based last-mile delivery platform integrating local shops and delivery agents</li>
+                    <li>Founded a Chatbot-based last-mile delivery platform integrating local shops and delivery agents</li>
                     <li>Designed product flow, vendor onboarding, and customer feedback loop serving active users</li>
                     <li>Analyzed adoption data and pivoted after identifying market-fit gaps, extracting insights on user acquisition and retention</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Data Science Education Program</div>
-                        <div class="company">Radio MGIRI 90.4 FM</div>
-                    </div>
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">B.E. Electronics & Telecommunication Engineering</div>
+                <div class="institution">Pune University</div>
+                <div class="date">Expected 2026</div>
+            </div>
+            <div class="education-item" style="margin-top: 20px;">
+                <div class="degree">Diploma in Electronics & Telecommunication</div>
+                <div class="institution">MSBTE</div>
+                <div class="date">2013 – 2019</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical</h3>
+                    <p>Python, JavaScript, HTML/CSS, Google Apps Script, Firebase, SQL, Data Visualization</p>
                 </div>
-                <ul class="achievements">
-                    <li>Crafted and taught a 20 episode Data Science program designed for the community to understand data science and artificial intelligence through audio broadcast</li>
-                    <li>Translated complex technical concepts into accessible audio content for diverse audiences</li>
-                </ul>
+                <div class="skill-category">
+                    <h3>Product & Tools</h3>
+                    <p>Agile Workflows (Scrum), Product Roadmapping, User Research, Metrics Design (AARRR), Figma, GSheet Automation, GCP Basics, Business Case Modeling, Jira</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Recognition</h2>
+            <div class="recognition-item">
+                <p><strong>Google Foobar Challenge:</strong> Invited to Google Foobar Challenge, signaling validated technical aptitude and advanced problem-solving skills</p>
+            </div>
+            <div class="recognition-item">
+                <p><strong>CEO Certificate of Appreciation:</strong> Developed and deployed a continuity testing device for ventilator QA at Noccarc Robotics, Pune, <span class="highlight">reducing inspection time by 90%</span> and earning recognition from the CEO</p>
             </div>
         </div>
     </div>
